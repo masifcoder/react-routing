@@ -1,0 +1,27 @@
+
+
+#about-page {
+    height: 100vh;
+    width: 100%;
+    background-color: gold;
+}
+
+
+#home-page {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(21, 237, 223);
+}
+
+#contacts-page {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(139, 251, 152);
+}
+
+
+#notfound-page {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 63, 204);
+}
