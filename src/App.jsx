@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Notfound from "./pages/Notfound";
 import Menu from "./components/Menu";
+import User from './pages/User';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home />}  />
         <Route path='/about' element={<About />} />
         <Route path='/contact-us' element={<Contacts />} />
+        <Route path='/users/:sid' element={<User />} />
         <Route path='*' element={<Notfound />} />
      </Routes>
      footer
