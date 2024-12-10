@@ -7,6 +7,8 @@ import Contacts from "./pages/Contacts";
 import Notfound from "./pages/Notfound";
 import Menu from "./components/Menu";
 import User from './pages/User';
+import SearchForm from './pages/SearchForm';
+import SearchResults from './pages/SearchResults';
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact-us' element={<Contacts />} />
         <Route path='/users/:sid' element={<User />} />
+        <Route path='/search' element={<SearchResults />} />
+        <Route path='/form' element={<SearchForm />} />
         <Route path='*' element={<Notfound />} />
      </Routes>
      footer

@@ -21,12 +21,13 @@ function Menu() {
     <div>
         <ul>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/about?q=aaa'>About</Link></li>
             <li><Link to='/contact-us'>Contact</Link></li>
+            <li><Link to='/form'>Search Form</Link></li>
             {
               students.map( (std) => {
                 return(
-                  <li><Link to={`/users/${std.id}`} > {`User ${std.id}`} </Link></li>
+                  <li key={std.id}><Link to={`/users/${std.id}`} > {`User ${std.id}`} </Link></li>
                 )
               } )
             }
