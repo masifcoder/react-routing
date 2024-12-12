@@ -31,6 +31,7 @@ function Menu() {
                 )
               } )
             }
+            <li><Link to='/dashboard'>Dashboard</Link></li>
         </ul>
     </div>
   )

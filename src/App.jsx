@@ -10,6 +10,11 @@ import User from './pages/User';
 import SearchForm from './pages/SearchForm';
 import SearchResults from './pages/SearchResults';
 import Details from './pages/Details';
+import Dashboard from './pages/Dashboard';
+import CreateUser from "./pages/dashboard/CreateUser";
+import ViewUsers from "./pages/dashboard/ViewUsers";
+import Settings from "./pages/dashboard/Settings";
+import Login from './pages/Login';
 
 function App() {
 
@@ -24,6 +29,15 @@ function App() {
         <Route path='/details/:id' element={<Details />} />
         <Route path='/search' element={<SearchResults />} />
         <Route path='/form' element={<SearchForm />} />
+        <Route path='/login' element={<Login />} />
+        
+        <Route path='/dashboard' element={<Dashboard />}>
+          <Route path='create' element={<CreateUser />} />
+          <Route path='view-users' element={<ViewUsers />} />
+          <Route path='settings' element={<Settings />} />
+        </Route>
+          
+
         <Route path='*' element={<Notfound />} />
      </Routes>
      footer
